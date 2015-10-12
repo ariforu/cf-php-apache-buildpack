@@ -21,10 +21,4 @@ import os
 # Location of the user's application files
 BUILD_DIR = sys.argv[1]
 
-for root, dirs, files in os.walk(BUILD_DIR):
-    for f in files:
-        if f.endswith('.php'):
-            print 'PHP'
-            sys.exit(0)
-print 'no'
-sys.exit(1)
+sys.exit(0)
